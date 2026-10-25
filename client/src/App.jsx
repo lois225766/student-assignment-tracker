@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API = "https://student-assignment-tracker-4pm9.onrender.com/api/assignments";
+const API = "https://student-assignment-tracker-api-yfpm.onrender.com/api/assignments";
 
 function App() {
   const [assignments, setAssignments] = useState([]);
