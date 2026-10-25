@@ -1,0 +1,245 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #20243a;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 0 30px;
+}
+
+.hero-icon {
+  font-size: 42px;
+}
+
+.eyebrow {
+  color: #6258d9;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: #6e7285;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.stat-card,
+.panel {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 20px #22224408;
+}
+
+.stat-card span {
+  display: block;
+  color: #74788a;
+  font-size: 14px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.panel {
+  margin-bottom: 22px;
+}
+
+.panel h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.assignment-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.assignment-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #dfe2ec;
+  border-radius: 8px;
+  background: white;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 15px;
+  font-weight: 600;
+}
+
+.add-button {
+  align-self: end;
+  background: #6258d9;
+  color: white;
+}
+
+.assignment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid #eceef4;
+}
+
+.assignment-info h3 {
+  margin: 0 0 8px;
+}
+
+.assignment-info p {
+  color: #74788a;
+  font-size: 14px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.tags,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.priority,
+.status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.priority {
+  background: #f0edff;
+  color: #6258d9;
+}
+
+.priority.high {
+  background: #ffe8e8;
+  color: #b42318;
+}
+
+.priority.low {
+  background: #e4f7ed;
+  color: #187747;
+}
+
+.status {
+  background: #eef1f7;
+  color: #525a70;
+}
+
+.complete-button {
+  background: #e8f6ed;
+  color: #187747;
+}
+
+.delete-button {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px 10px;
+  color: #74788a;
+}
+
+.empty span {
+  font-size: 35px;
+}
+
+.empty h3 {
+  color: #20243a;
+}
+
+.error {
+  color: #b42318;
+  background: #fff0f0;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #85899a;
+  font-size: 13px;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .stats {
+    gap: 8px;
+  }
+
+  .stat-card {
+    padding: 14px 10px;
+  }
+
+  .stat-card span {
+    font-size: 12px;
+  }
+
+  .stat-card strong {
+    font-size: 24px;
+  }
+
+  .assignment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .assignment-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
